@@ -10,7 +10,6 @@ open class Genre : RealmObject() {
     var id: String? = UUID.randomUUID().toString()
     var title: String? = null
     var books: RealmList<Book>? = null
-    var stuff: String? = null
     override fun toString(): String {
         return title?: "unknown genre"
     }
